@@ -1,0 +1,14 @@
+#firstPara{
+    color: rgb(124, 12, 12);
+    background-color: rgb(226, 248, 248);
+    
+}
+
+#secondPara{
+    color: rgb(14, 236, 99);
+}
+
+#thirdpara{
+    color: #ff0000; /*Hex color method*/
+    border: 1px solid brown;
+}

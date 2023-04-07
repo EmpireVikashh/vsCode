@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Display property</title>
+
+    <style>
+        /* Display inline ka mtlb hai jitna bada element hai utni Space le lega
+           Display block ka mtlb hai hum uski width set kar sakte hai */
+           /* Lekin agar aap kisi elemnt ko inline karna chahte usi ke saath uski width ke saath bhi khelna chate ho to Inline block use karna hai */
+        header{
+            /* margin:auto; */
+            border: 2px solid rgb(247, 21, 5);
+            /* width: 17%;  */
+            /* Block level element hai isiliye mai width de paa raha hu */
+        }
+        img{
+            width: 150px;
+            margin:auto;
+            display: block;
+        }
+        h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            text-align: center;
+        }
+        .box{
+            background-color: wheat;
+            border: 4px solid red;
+           
+            margin: 0px;
+            padding: 23px;
+            /* inline bhi hai aur block bhi hai */
+            display: inline-block;
+            width: 33%;
+            box-sizing: border-box;
+        }
+        .container{
+            margin-top: 7px;
+            margin-left: 30px;
+            width: 1200px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="DSC_0363.JPG"alt="">
+        <h3>Welcome to harry's blog</h3>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">This is heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta aliquid laboriosam magni, modi ad aliquam dolorem sed laudantium incidunt quidem pariatur eius veritatis delectus, iusto accusantium? Molestias, eos officiis porro soluta aut delectus et omnis a accusamus consequatur earum at nam. Quasi, ratione.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">This is heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta aliquid laboriosam magni, modi ad aliquam dolorem sed laudantium incidunt quidem pariatur eius veritatis delectus, iusto accusantium? Molestias, eos officiis porro soluta aut delectus et omnis a accusamus consequatur earum at nam. Quasi, ratione.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">This is heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta aliquid laboriosam magni, modi ad aliquam dolorem sed laudantium incidunt quidem pariatur eius veritatis delectus, iusto accusantium? Molestias, eos officiis porro soluta aut delectus et omnis a accusamus consequatur earum at nam. Quasi, ratione.</p>
+        </div>
+    </div>
+</body>
+</html>

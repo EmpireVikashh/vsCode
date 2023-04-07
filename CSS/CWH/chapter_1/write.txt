@@ -1,0 +1,4 @@
+their are three types to adding css
+1- inline css : css is added to the element directly using style attribute (wahi ke wahi line me he ghusa do)
+2- internal css: css is kept inside the head tags in <style> tags (head ke andar style tag laga kar likh de)
+3- External css: css is kept seperetly inside a css style sheet (alag se file banake usme puri css likh le)

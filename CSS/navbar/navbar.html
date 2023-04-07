@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: calibri;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        nav {
+            width: 100%;
+            height: 80px;
+            background-color: aqua;
+        }
+
+        label.logo {
+            font-size: 30px;
+            margin: 0 30px;
+            line-height: 80px;
+        }
+
+        nav ul {
+            float: right;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+
+        }
+
+        nav ul li a {
+            /* Remove underline */
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            text-transform: capitalize;
+            padding: 8px 20px;
+        }
+
+        nav ul li a.active,
+        a:hover {
+            background-color: rgb(11, 241, 241);
+        }
+
+
+        #checkbtn {
+            float: right;
+            line-height: 80px;
+            margin-right: 10px;
+            font-weight: bolder;
+            font-size: 40px;
+            display: none;
+        }
+
+        #cheak {
+            display: none;
+        }
+
+        #cheak:checked~ul {
+            left: 0;
+        }
+
+        @media(max-width:720px) {
+            label.logo {
+                font-size: 30px;
+            }
+
+            nav ul {
+                width: 100%;
+                height: 100vh;
+                background-color: rgb(11, 241, 241);
+                position: fixed;
+                top: 80px;
+                /* Ye isliye kiya taaki poora left me chala jaaye kyuki 2line par click ke baad humko chahiye */
+                left: -100%;
+                transition: 2s;
+            }
+
+            nav ul li {
+                display: block;
+                text-align: center;
+                line-height: 35px;
+                margin: 15px;
+            }
+
+            #checkbtn {
+                /* Buttun show hoga */
+                display: block;
+            }
+        }
+        @media (max-width:350px){
+            label.logo{
+                font-size: 20px;
+                font-weight: bolder;
+                margin: 0px 3px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- this chekbox is using for button -->
+        <input type="checkbox" id="cheak" name="" value="">
+        <label for="cheak" id="checkbtn"><i class="fa fa-bar">==</i></label>
+        <!-- Agar yaha p ke andar likhne to poori line block ho jaati isiliye label ke andar likha taaki li same line me rahe -->
+        <label class="logo">Heavy Coding</label>
+
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

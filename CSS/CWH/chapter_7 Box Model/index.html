@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <!-- Margin then Border then Padding then element is called box model as simple as that-->
+    <style>
+        /* Universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(255, 178, 127);
+        }
+        .container1{
+            background-color: aquamarine;
+            border: 2px solid rgb(49, 1, 223);
+            padding: 50px; /* andar he andar space de dega */
+            margin: 10px;
+        }
+        .container3{
+            background-color: aquamarine;
+            border: 2px solid rgb(49, 1, 223);   
+            /* padding: 20px; */
+            margin: 10px;
+            /* padding-top: 0px; */
+
+            padding: 10px 20px 30px 40px;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <H2>Box Model</H2>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni, voluptates rem eius cumque
+            dolor eum aliquam atque recusandae amet!</p>
+    </div> 
+
+    <div class="container1">
+        <H2>Box Model</H2>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni, voluptates rem eius cumque
+            dolor eum aliquam atque recusandae amet!</p>
+    </div>
+
+    <div class="container3">
+        <H2>Box Model</H2>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni, voluptates rem eius cumque
+            dolor eum aliquam atque recusandae amet!</p>
+    </div>
+
+</body>
+</html>

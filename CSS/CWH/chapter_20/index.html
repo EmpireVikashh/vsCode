@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo Selector</title>
+    <style>
+        h1{
+            font-size: 4rem;
+        }
+        body{
+            
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: aliceblue;
+        }
+        .navigation{
+            display: flex;
+            /* flex-direction:row; */
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            padding: 10px;
+            height: 350px;
+            align-items: center;
+            border: 2px solid paleturquoise;
+            /* justify content vertically bhi centre kar dega */
+            justify-content: center;
+        }
+        header::before{
+            background: url(https://media.istockphoto.com/id/1034078430/photo/programming-code-abstract-technology-background-of-software-developer-and-computer-script.jpg?s=1024x1024&w=is&k=20&c=Io81MSSc5D-mYcKjzAPAhmT-XM-ejAaYX-U-aTVr-zE=) no-repeat center center/cover;
+            content: "";
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        section::before{
+            content: "this is a content";
+        }
+        section::after{
+            content: "this is a content";
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item1"><a href="" style="color:white;">Home</a></li>
+                <li class="item2">About</li>
+                <li class="item3">Services</li>
+                <li class="item4">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to Coding World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos reprehenderit minus odio ea iste esse quam illo est culpa ex, quaerat tempore laudantium fugit delectus! Voluptatem repudiandae nesciunt ad necessitatibus, deserunt sit reprehenderit.</p>
+        </section>
+        <hr>
+</body>
+</html>

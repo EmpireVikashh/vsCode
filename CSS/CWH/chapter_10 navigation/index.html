@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+
+    <style>
+        .navbar {
+            background-color: rgb(2, 32, 32);
+            border-radius: 25px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 3px 3px;
+
+        }
+
+        #search {
+
+            padding: 5px 2px;
+            margin: 7px 67px 7px 0px;
+            float: right;
+
+        }
+
+        #btn {
+            padding: 3px 2px;
+            margin: 10px 1px;
+            float: right;
+            border-radius: 7px;
+        }
+        #btn:hover{
+           background-color:rgb(236, 185, 149);
+        }
+
+        .navbar input {
+            border: 2px solid rgb(61, 4, 4);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="">Home</a></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="">Service</a></li>
+                <li> <a href="">Contact</a></li>
+                <input type="text" name="search" id="search" placeholder="Search your text">
+                <button id="btn">search</button>
+            </ul>
+
+        </nav>
+    </header>
+    <h1>
+        Welcome to Saurabh Bsdwala Page
+    </h1>
+</body>
+
+</html>

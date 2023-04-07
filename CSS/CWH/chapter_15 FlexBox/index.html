@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Blox</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* Iniliatize the container as a flex box */
+            display: flex;
+
+            /* Flex properties for flex container */
+            /* flex-direction: row;    by deafault row hoti hai*/
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            flex-wrap: wrap;
+
+            /* flex-flow: row-reverse wrap; This is the shorthand for flex-direction and flex-wrap */
+
+            /* container ke andar ki chizz centre */
+             justify-content: center;
+            /*justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+
+            /* align-items: center;
+            align-items: flex-end; */
+
+            /* Strech ke liye flex wrap wrap karna padega */
+            /* align-items: stretch; */
+
+        }
+        .item{
+            background-color: tomato;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 3px;
+            height: 50px;
+            width: 100px;
+
+        }
+
+        /* Jiska order jyada hoga wo last me rahega */
+        #item-1{
+            order: 3;
+            /* flex-grow: 1;
+            flex-shrink: 1; */
+        }
+        #item-2{
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+
+            /* order: 5; */
+            /* When flex-direction is set to row flex-basis will control width */
+            /* When flex-direction is set to column flex-basis will control height */
+            flex-basis: 150px;
+        }
+        #item-3{
+            /* order: 6; */
+
+            /* Khud ki place par he rehkarkar up down centre hoga */
+            align-self: flex-end;
+            /* align-self: flex-start;
+            align-self: center; */
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex Box is a one dimension layout methdod for laying out items in rows or column,
+         CSS flex box is abeetr way to aligh items into a container.
+         Flexbox = flexible + box -->
+
+         <h1>This is Flexbox Tutorial</h1>
+         <div class="container">
+
+            <!-- (div.item#item-$*6)  Shortcut for increasing way -->
+
+            <div class="item" id="item-1">First Box</div>
+            <div class="item" id="item-2">Second Box</div>
+            <div class="item" id="item-3">Third Box</div>
+            <div class="item" id="item-4">Fourth Box</div>
+            <div class="item" id="item-5">Fifth Box</div>
+            <div class="item" id="item-6">Sixth Box</div>
+         </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+/* p {color : blue;}   P-> selector  color-> property  blue-> value */
+p{
+    color:blue !important;
+}

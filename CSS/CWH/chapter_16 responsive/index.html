@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            font-size: 9px;
+            border: 2px solid red;
+            /* width: 400px; */
+            /* height: 400px; */
+            /* pure page me height width huu jayega */
+            height: 100vh;
+            width: 100vw;
+        }
+        h1{
+            text-align: center;
+        }
+        .first{
+            /* 01 em*/
+            /* Apne parent se multiply ho jayega font-size iska parent container hai  */
+            /* font-size: 10em; */
+            /* Padding 3 time of font size lega that means 10*9=90x3=270px padding */
+            /* /* padding: 3em; */
+
+        }
+        .second{
+            /* rem html root elemnt ke relative se multiply hoga */
+            /* font-size: 3rem; */
+            /* html se multiply hoga */
+            /* padding: 4rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="first"> This is first heading</h1>
+        <h1 class="second">This is third heading</h1>
+        <h1 class="third"> This is fourt heading</h1>
+    </div>
+</body>
+</html>

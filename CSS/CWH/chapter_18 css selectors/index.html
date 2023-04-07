@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        h1{
+            background-color: aqua;
+            text-align: center;
+        }
+      /*  div p{ 
+            /* div p -> that means div ke andar jitne p hai un sabko select kar liya
+            background-color: yellowgreen;
+            color: rgb(34, 21, 11);
+        }*/
+        /* div li p{ /* div li p -> that means div ke andar li ke andar jitne p hai un sabko select kar liya
+            background-color: rgb(244, 228, 0);
+            color: rgb(34, 21, 11);
+        } */
+
+        /* div > p{
+            /* div ka jo direct child p hai usko effect karega only
+            background-color: fuchsia;
+        } */
+        div+p{
+            /* Wo paragraph jiska pichhla sibling div ho */
+            color: white;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside p</p></li>
+                <li>Another li</li>
+                <p>This is a para inside ul</p>
+            </ul>
+            <p>This is  paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer paragraph</p>
+</body>
+</html>
